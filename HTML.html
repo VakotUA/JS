@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="Styles.css">
+<script src="Task's.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lora&family=Open+Sans&family=Oswald&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+</head>
+
+
+
+
+<body>
+	<section class="factorial">
+		<div class="container">
+			<legend class="legend">Факториал числа</legend>
+			<div class="_factorial">
+				<input type="number" id="num" placeholder="Введите целое число:" value="5">
+				<button type="button" class="button" onclick="get_answers()">Посчитать</button>
+			</div>
+			<p id="result">Результаты:</p>
+			<p id="answer1">Рекурсивно: 0</p>
+			<p id="answer2">Не рекурсивно: 0</p>
+		</div>
+	</section>
+
+
+
+
+	<section class="parent_child">
+		<div class="container">
+			<legend class="legend">Наследование</legend>
+			<form class="parent__child">
+				<div class="figure">
+					<label>Parent</label>
+					<label>Name(Set)</label>
+					<label>Name(Get)</label>
+					<label>Type</label>
+					<label>Size(Set)</label>
+					<label>Area(Get)</label>
+				</div>
+
+				<div class="figure">
+					<label>Child of Figure</label>
+					<input type="" id="square_name" value="Квадрат">
+					<label id="square_name_print"></label>
+					<label id="square_type"></label>
+					<input type="" id="square_size" value="5">
+					<label id="square_area"></label>
+				</div>
+
+				<div class="figure">
+					<label>Child of Square</label>
+					<input type="" id="rectangle_name" value="Прямоугольник">
+					<label id="rectangle_name_print"></label>
+					<label id="rectangle_type"></label>
+					<input type="" id="rectangle_size" value="5, 11">
+					<label id="rectangle_area"></label>
+				</div>
+
+				<div class="figure">
+					<label>Child of Figure</label>
+					<input type="" id="triangle_name" value="Треугольник">
+					<label id="triangle_name_print"></label>
+					<label id="triangle_type"></label>
+					<input type="" id="triangle_size" value="3, 4, 5">
+					<label id="triangle_area"></label>
+				</div>
+			</form>
+			<button type="button" class="btn button" onclick="print()">Выполнить</button>
+			<p class="p_c_info">Методы Size() (установить размеры фигуры) и Name() (получить имя фигуры) прописаны только в родительском классе Parent (figure) и унаследованы всеми дочерними. Метод Area() является уникальным для каждого класса и возвращает площать описанной в нём фигуры.</p>
+		</div>
+	</section>
+
+
+
+
+	<section class="module_pattern">
+		<div class="container">
+			<legend class="legend">Module Pattern</legend>
+			<form class="module__pattern">
+				<div id="input">
+					<input id="private" placeholder="Private property!" value="I am a private property">
+					<input id="public" placeholder="Public property!" value="I am a public property">
+				</div>
+				<div id="output_main">
+					<div id="output">
+						<div class="output">
+							<span class="line">
+								<label>Public property</label>
+								<label id="_public">Public property</label>
+							</span>
+							<span class="line">
+								<label>Public method</label>
+								<label id="public_method">Public method</label>
+							</span>
+							<span class="line">
+								<label>Private property</label>
+								<label id="_private">Private property</label>
+							</span>
+							<span class="line">
+								<label>Private method</label>
+								<label id="private_method">Private method</label>
+							</span>
+						</div>
+					</div>
+					<button type="button" class="btn button" onclick="module()">Выполнить</button>
+				</div>
+			</form>
+		</div>
+	</section>
+</body>
+</html>

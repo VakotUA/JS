@@ -1,0 +1,245 @@
+* {
+	font-family: 'Roboto', sans-serif;
+	font-size: 32px;
+	color: white;
+}
+body {
+	margin: 0;
+	padding: 0;
+}
+.container {
+	width: 70%;
+	min-height: 100vh;
+	padding: 5% 0;
+	margin: 0 auto;
+	border: none;
+}
+.legend {
+	text-align: center;
+	font-size: 100px;
+	font-weight: 900;
+	width: 100%;
+	padding-top: 5%;
+	margin-bottom: 5%;
+}
+label {
+	color: white;
+	font-size: 20px;
+	background-color: transparent;
+	border: 2px solid white;
+	padding: 1%;
+	padding-left: 1em;
+	margin: auto 0;
+}
+input {
+	color: white;
+	font-size: 20px;
+	background-color: transparent;
+	border: 2px solid white;
+	padding: 1%;
+	transition: color 0.3s linear, background-color 0.3s linear, border-color 0.3s linear;
+	border-radius: 0 0 0 0;
+	padding-left: 1em;
+	margin: auto 0;
+}
+input:focus, input:active {
+	border: 2px solid rgba(0, 0, 0, 0.4);
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+
+/* Factorial */
+.factorial {
+	width: 100%;
+	background-color: lightslategray;
+	border-bottom: 2px solid white;
+}
+._factorial {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	padding: 5% 0;
+	border-top: 2px solid white;
+	border-bottom: 2px solid white;
+}
+#num {
+	color: lightslategray;
+	font-size: 40px;
+	padding: 1%;
+	background-color: white;
+	border: 2px solid white;
+	transition: color 0.3s linear, background-color 0.3s linear;
+	border-radius: 10px 0 0 10px;
+	height: auto;
+}
+.button {
+	color: white;
+	font-size: 40px;
+	background-color: transparent;
+	border: 2px solid white;
+	transition: color 0.3s linear, background-color 0.3s linear;
+	border-radius: 0 10px 10px 0;
+}
+.button:hover {
+	color: lightslategray;
+	background-color: white;
+}
+#answer2 {
+	padding-bottom: 5%;
+	border-bottom: 2px solid white;
+}	
+#result {
+	margin: 5% 0 0;
+	text-align: center;
+	font-size: 32px;
+	font-weight: 600;
+}
+.btn {
+	width: 100%;
+	border-radius: 10px 10px 10px 10px;
+	margin: 5% 0;
+}
+.btn:hover {
+	color: lightseagreen;
+	background-color: white;
+}
+
+
+
+
+
+
+
+/* Parent-Child */
+.parent_child {
+	width: 100%;
+	background-color: lightseagreen;
+	border-bottom: 2px solid white;
+}
+.parent__child {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 5% 0 0;
+	border-top: 2px solid white;
+}
+.figure {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 24%;
+}
+.figure label {
+	border-bottom: 0;
+}
+.figure label:first-child {
+	border-radius: 10px 10px 0 0;
+	color: lightseagreen;
+	background-color: white;
+}
+.figure label:last-child {
+	border-radius: 0 0 10px 10px;
+	border-bottom: 2px solid white;
+}
+.figure input {
+	border-bottom: 0;
+}
+.figure input:hover {
+	color: lightseagreen;
+	background-color: white;
+}
+.p_c_info {
+	font-size: 24px;
+	text-align: justify;
+	margin: 0;
+	padding: 5% 0;
+	border-top: 2px solid white;
+	border-bottom: 2px solid white;
+}
+
+
+
+
+
+
+/* Module Pattern */
+.module_pattern {
+	width: 100%;
+	background-color: lightsalmon;
+	border-bottom: 2px solid white;
+}
+.module__pattern {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+#input {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	justify-content: center;
+	padding: 5% 0;
+	border-top: 2px solid white;
+	border-bottom: 2px solid white;
+}
+#input input:hover {
+	color: lightsalmon;
+	background-color: white;
+}
+#public, #private {
+	border: 2px solid white;
+}
+#public {
+	border-radius: 0 0 10px 10px;
+	border-top: 1px solid white;
+}
+#private {
+	border-radius: 10px 10px 0 0;
+	border-bottom: 1px solid white;
+}
+
+#output_main {
+	width: 100%;
+	padding: 5% 0 0;
+	border-bottom: 2px solid white;
+}
+
+#output {
+	border: 2px solid white;
+}
+.output {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.output label {
+	border: 0;
+	border-bottom: 2px solid white;
+	margin: auto 0;
+}
+.line {
+	display: flex;
+}
+.line label:first-child {
+	width: 200px;
+	border-right: 1px solid white;
+}
+.line label:last-child {
+	width: 100%;
+	border-left: 1px solid white;
+}
+.line:last-child label {
+	border-bottom: 0;
+}
+#output { 
+	border-radius: 10px;
+}
+#output_main .btn:hover {
+	color: lightsalmon;
+	background-color: white;
+}
